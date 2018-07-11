@@ -1,0 +1,343 @@
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(132deg, #bd00ce, #3ae4ff);
+  background-size: 250% 250%;
+  animation: defaultGradient 15s ease infinite;
+}
+
+@keyframes deafultGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+@-webkit-keyframes defaultGradient {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+@-moz-keyframes defaultGradient {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+a[href^="tel:"] {
+  color: white;
+}
+
+.wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%; height: 100vh;
+  /* outline:1px dotted blue; */
+}
+
+.load-img {
+  width: 37%; height: auto;
+  position: fixed;
+  left: 35%; top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.load-text-top {
+  position: fixed;
+  left: 65%; top: -57%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 8vw;
+  text-decoration: none;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.load-text-bottom {
+  position: fixed;
+  left: 65%; top: -52%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 8vw;
+  text-decoration: none;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.enter-button {
+  position: fixed;
+  left: 66%; top: 135%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6vw;
+  text-decoration: none;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.enter-button:hover {
+  position: fixed;
+  left: 66%; top: 135%;
+  transform: translate(-50%, -50%);
+  color: pink;
+  font-size: 6vw;
+  text-decoration: none;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.header {
+  width: 100%; min-height: 10vh;
+  position: relative;
+  left: 101%; top: 0%;
+  display: flex;
+  flex-direction: row;
+  /* outline: 1px dotted white; */
+}
+
+.header-img {
+  width: 10%; height: auto;
+  position: fixed;
+  left: 101%; top: 1.5%;
+}
+
+.resume-button {
+  position: fixed;
+  width: 100%;
+  left: 113%; top: 4%;
+  color: white;
+  font-size: 4.5vw;
+  text-decoration: none;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.resume-button:hover {
+  position: fixed;
+  width: 100%;
+  left: 113%; top: 4%;
+  color: pink;
+  font-size: 4.5vw;
+  text-decoration: none;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.body {
+  width: 100%; min-height: 90vh;
+  position: relative;
+  left: 0%; top: 145%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* outline: 1px dotted white; */
+}
+
+.body-name {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 50%; top: 185%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 8.5vw;
+  overflow: auto;
+  /* outline: 1px dotted red; */
+}
+
+.body-title {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 50%; top: 190%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vw;
+}
+
+.title-button {
+  position: fixed;
+  left: 50%; width: 15%;
+  top: 205%;
+  transform: translate(-50%, -50%);
+}
+
+.title-button-left {
+  left: 32%;
+}
+
+.title-button-right {
+  left: 68%;
+}
+
+.contact-info {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 150%; top:90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vw;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-info a:hover {
+  text-decoration: none;
+  color: pink;
+}
+
+.about-me-button {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 50%; top: 240%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6vw;
+  text-decoration: none;
+
+}
+
+.about-me-box {
+  display: inline-block;
+}
+
+.about-me-img {
+  width: 25%; height: auto;
+  position: fixed;
+  left: 101%; top: 36%;
+  border-radius: 15px;
+  float: left;
+}
+
+.about-me-text {
+  position: fixed;
+  left: 135%; top: 34%;
+  width: 60%; min-height: 30%;
+  color: white;
+  font-size:1.9vw;
+  /* outline: 1px dotted white; */
+}
+
+.projects-button {
+  position: fixed;
+  width: 80%;
+  text-align: center;
+  left: 50%; top: 245%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6vw;
+  text-decoration: none;
+  /* border: 1px dotted right; */
+}
+
+.clicked {
+  color: pink;
+}
+
+.projects-box {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 100%; height: 55vh;
+  left: 50%; top:168%;
+  transform: translate(-50%, -50%);
+  /* outline: 1px dotted red; */
+}
+
+.project-box {
+  display: flex;
+  flex: 1;
+  padding-top: 3px; padding-bottom: 3px;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  /* outline: 1px dotted white; */
+}
+
+.project-img {
+  flex: 4;
+  align-items: center;
+  padding-left: 1%;
+  justify-content: center;
+  /* outline: 1px dotted blue; */
+}
+
+.project-img img {
+  width:95%; height: auto;
+  border-radius: 15px;
+  border: 2px solid grey;
+}
+
+.project-info {
+  flex: 5;
+  /* outline: 1px dotted blue; */
+}
+
+.project-header {
+  flex: 3;
+  font-size: 4vw;
+  /* outline: 1px dotted blue; */
+}
+
+.project-description {
+  padding-top: 1%;
+  padding-right: 1%;
+  justify-content: center;
+  font-size: 2vw;
+  flex: 5;
+  /* outline: 1px dotted blue; */
+}
+
+.project-left {
+  /* font-size: 0.9vw; */
+}
+
+.project-middle {
+  font-size: 1.9vw;
+}
+
+.project-right {
+  font-size: 1.8vw;
+}
+
+/* h1 {
+  position: absolute;
+  width: 65%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: Open Sans, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3vw;
+  background-color: #000;
+  padding: 5px;
+  transition: transform 500ms ease-in-out
+}
+
+h1:hover {
+  position: absolute;
+  width: 65%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: Open Sans, sans-serif;
+  color: #fff;
+  box-shadow: 0px 0px 50px white;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3vw;
+  background-color: #000;
+  padding: 5px;
+} */
